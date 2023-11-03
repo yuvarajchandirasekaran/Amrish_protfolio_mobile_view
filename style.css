@@ -612,7 +612,7 @@ h3 span, .project-content h2 span, .contact-content h2 span, .skills-content h2 
         font-size: 14px;
         margin: 15px auto;
     }
-
+    /* about */
     .about{
         flex-direction: column-reverse;
     }
