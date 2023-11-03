@@ -19,27 +19,29 @@ const allProject = document.querySelector(".all-projects")
 
 const image = document.querySelector(".project-image");
 
+const sendMailBtn = document.querySelector(".mail-btn");
+
 // Projects array:-
 const Projects = [
     {
         id: 1,
         image: "./portfolio-images/emi-calc.png",
         name: "EMI-Calculator",
-        description: "A react app that counts the number of stocks bought in a portfolio. Lets go and check my project",
+        description: "An EMI calculator web application for quick and accurate loan repayment calculations",
         github: "https://amrishsekar.github.io/EMI-calculator/"
     },
     {
         id: 2,
         image: "./portfolio-images/keyboard.png",
         name: "Keyboard",
-        description: "A react app that counts the number of stocks bought in a portfolio. Lets go and check my project",
+        description: "Create a user-friendly online virtual keyboard for seamless typing on any device.",
         github: "https://amrishsekar.github.io/Online-Keyboard/"
     },
     {
         id: 3,
         image: "./portfolio-images/text-to-speech-convertor.png",
         name: "Text-to-Speech",
-        description: "A react app that counts the number of stocks bought in a portfolio. Lets go and check my project",
+        description: "Develop a versatile text-to-speech converter for seamless audio content generation",
         github: "https://amrishsekar.github.io/Text-to-speech-convertor/"
     }
 ]
@@ -115,7 +117,7 @@ closeBtn.addEventListener("click", () => {
         skillsNav.style.color = "#fff"
         contactNav.style.color = "#fff"
     }
-    else if(scroll >= 1600){
+    else if(scroll >= 2200 && scroll <= 2800){
         contactNav.style.color = "#0ef"
         homeNav.style.color = "#fff"
         aboutNav.style.color = "#fff"
@@ -126,7 +128,7 @@ closeBtn.addEventListener("click", () => {
 
 // Typing functionality:-
 var typed = new Typed(".auto-type",{
-    strings : ["Frontend Dev", "Backend Dev", "Designer"],
+    strings : ["UI Dev", "Backend Dev", "Designer"],
     typeSpeed : 150,
     backSpeed : 50,
     loop : true,
